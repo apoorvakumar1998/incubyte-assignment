@@ -20,12 +20,14 @@ function StringCalculator() {
   return (
     <div className="App">
       <h1>String Calculator</h1>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Enter numbers"
-      />
+      <div>
+        <textarea
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Enter numbers"
+        />
+      </div>
       <button onClick={handleSubmit}>Calculate</button>
       {result !== null && <h2>Result: {result}</h2>}
       {error && <h2 style={{ color: 'red' }}>Error: {error}</h2>}
