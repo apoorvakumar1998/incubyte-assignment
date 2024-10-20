@@ -1,8 +1,12 @@
 export function add(numbers) {
-  if (numbers === '' || numbers === undefined) return 0;
+  if (numbers === '' || numbers === undefined) {
+    return 0;
+  };
 
-  // If the string doesnt contain , or 
-  if (!numbers.includes(',') && !numbers.includes('\n')) return +numbers;
+  // If the string doesnt contain , or new line return entered number
+  if (!numbers.includes(',') && !numbers.includes('\n')) {
+    return +numbers;
+  };
 
   // Default delimiter
   let delimiter = ',';

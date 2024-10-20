@@ -18,7 +18,7 @@ function StringCalculator() {
   };
 
   return (
-    <div className="App">
+    <div>
       <h1>String Calculator</h1>
       <div>
         <textarea style={{ height: '100px' }}
