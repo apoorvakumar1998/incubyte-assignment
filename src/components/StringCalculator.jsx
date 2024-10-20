@@ -21,7 +21,7 @@ function StringCalculator() {
     <div className="App">
       <h1>String Calculator</h1>
       <div>
-        <textarea
+        <textarea style={{ height: '100px' }}
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
