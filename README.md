@@ -10,15 +10,15 @@
 # Available Scripts
   In the project directory, you can run the following scripts:
 
-  # npm start
-   Runs the app in development mode.
-   Open http://localhost:3000 to view the app in the browser.
-   The page will reload automatically if you make changes to the code.
+    # npm start
+     Runs the app in development mode.
+     Open http://localhost:3000 to view the app in the browser.
+     The page will reload automatically if you make changes to the code.
 
-  # npm test
-   Launches the test runner in interactive watch mode.
-   It will run all the test cases to ensure the correctness of the application based on the TDD approach.
-
+    # npm test
+     Launches the test runner in interactive watch mode.
+     It will run all the test cases to ensure the correctness of the application based on the TDD approach.
+  
 # Project Structure
   src/: Contains the source code for the String Calculator application.
   components/: React components for the calculator UI.
