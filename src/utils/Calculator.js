@@ -1,4 +1,7 @@
 export function add(numbers) {
   if (numbers === '' || numbers === undefined) return 0;
-  return +(numbers);
+  if (!numbers.includes(',')) return +numbers;
+
+  const numberArray = numbers.split(',');
+  return numberArray.reduce((sum, num) => sum + +num, 0);
 };
