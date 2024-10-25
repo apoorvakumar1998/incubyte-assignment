@@ -27,5 +27,9 @@ export function add(numbers) {
     throw new Error(`negative numbers not allowed: ${negatives.join(',')}`);
   }
 
-  return numberArray.reduce((sum, num) => sum + +num, 0);
+  if (delimiter === '*') {
+    return numberArray.reduce((sum, num) => sum * +num, 1);
+  } else {
+    return numberArray.reduce((sum, num) => sum + +num, 0);
+  }
 };

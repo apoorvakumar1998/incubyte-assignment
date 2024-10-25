@@ -34,4 +34,7 @@ describe('String Calculator', () => {
     expect(add("//;\n1;2;3")).toBe(6);
   });
 
+  test('supports custom delimiters but multiply if it is *', () => {
+    expect(add("//*\n1*2*4")).toBe(8);
+  });
 })
