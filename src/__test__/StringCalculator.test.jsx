@@ -37,4 +37,8 @@ describe('String Calculator', () => {
   test('supports custom delimiters but multiply if it is *', () => {
     expect(add("//*\n1*2*4")).toBe(8);
   });
+
+  test('cube the number if it is present 3 or more times in the input', () => {
+    expect(add("2,2,2,2,3,3")).toBe(14);
+  });
 })
